@@ -10,9 +10,9 @@
     <h1>hello my friend</h1>
     <h2>my opinion on various topics</h2>
     <ul>
-        {% for post in object_list %}
+        {% for post in object_list reversed %}
 
-            <li><h3>{{post.tittle}}</h3><br><h4>{{post.text}}</h4><br>{{post.author}}</li>
+            <li><h3>{{post.tittle}}</h3><h4>{{post.text}}</h4>{{post.author}}</li>
         {% endfor %}
     </ul>
 </body>
