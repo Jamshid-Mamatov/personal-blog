@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my blog</title>
+</head>
+<body>
+    <h1>hello my friend</h1>
+    <h2>my opinion on various topics</h2>
+    <ul>
+        {% for post in object_list %}
+
+            <li><h3>{{post.tittle}}</h3><br><h4>{{post.text}}</h4><br>{{post.author}}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
